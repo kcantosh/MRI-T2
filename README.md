@@ -46,4 +46,35 @@ Here `1` indicates that the input will be fed from `input.txt` file. Alternative
 ```
 $ ./main 0 out.dat
 ```
-However, in this case your input is hardcoded after compiling. This is not recommended option.
+However, in this case your input is hardcoded after compiling. This is not a recommended option.
+
+
+Results
+-------
+
+The output fille contains two columns time [s] and transverse mangetization [arb. units normalized to 1]
+```
+$ less out.dat
+0.000000e+00    1.000000e+00
+4.000000e-03    9.249262e-01
+8.000000e-03    9.691416e-01
+1.200000e-02    9.197097e-01
+1.600000e-02    9.507682e-01
+...
+```
+
+
+Credit
+------
+
+Oleg Rubel  
+Department of Material Science and Engineering  
+McMaster University  
+1280 Main Street West, Hamilton, Ontario L8S 4L8  
+Web page: http://www.tbrri.com/~orubel
+
+
+Acknowledgement
+---------------
+
+A special thanks to Dr. Boguslaw Tomanek (Department of Oncology, University of Alberta) for numerous discussions about the physics of MRI.
