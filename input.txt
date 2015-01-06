@@ -1,0 +1,14 @@
+[2]                                  % seed for random numbers = \n');
+[1.2599e-06 1.2599e-06 1.2599e-06]   % 3D size of the simulation box [m]
+[1]                                  % number of particles in the simulation box
+[5e-9]                               % Radius or particles [m]
+[10]                                 % Number of protons
+[120e-3]                             % Finite simulation time [s]
+[2.5e-9]                             % Diffusion coefficient [m^2/s] for water
+[0 0 2.5e-19]                        % Magnetic moment for nanoparticles [J/T]
+[4e-3]                               % Time between 180deg pulses [s] (twice tau in Hardy paper)
+[0.005e-3]                           % Step time for simulation [s]
+[0 0 0.3]                            % Magnetic field gradient (GM) [T/m]
+[0 0  1; 0 0  1]                     % Gradient pulse sequence units of GM
+[0.5 0.5]                            % Timing for the gradient pulse sequence t(i)/TE
+[0]                                  % Distribution of NPs (0 - random; 1 - cluster)
