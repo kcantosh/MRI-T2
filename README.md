@@ -11,7 +11,7 @@ Copy repository. Assuming that you have a linux environment and Git installed
 $ git clone https://github.com/rubel75/MRI-T2
 ```
 
-Alternatively you can just download a zip-file from
+Alternatively you can just download a zip-file from https://github.com/rubel75/MRI-T2/archive/master.zip
 
 
 Compilation (optional)
