@@ -11,7 +11,15 @@ Copy repository. Assuming that you have a linux environment and Git installed
 $ git clone https://github.com/rubel75/MRI-T2
 ```
 
-Navigate to the new directory
+Alternatively you can just download a zip-file from
+
+
+Compilation (optional)
+----------------------
+
+For multitasking and high-performance computing is is more convenient to compile the code and create a stand-alone application. Please note that compiling is not a mandatory option and you can run the simulation just from MatLab (see Execution 2 section below). Next steps explain how to compile the code.
+
+Navigate to the source directory
 ```
 $ cd MRI-T2
 ```
@@ -36,8 +44,10 @@ $ ls -ltr
 You are ready to perform simulations.
 
 
-Execution
----------
+Execution 1
+-----------
+
+This part is relevant for the compiled version. Please refer to Sec. Execution 2 below if you would like to run the code from MatLab environment.
 
 ```
 $ ./main 1 out.dat  <  input.txt
@@ -47,6 +57,34 @@ Here `1` indicates that the input will be fed from `input.txt` file. Alternative
 $ ./main 0 out.dat
 ```
 However, in this case your input is hardcoded after compiling. This is not a recommended option.
+
+
+Execution 2
+-----------
+
+This option is good for debugging and small calculations.
+
+Navigate to the source directory
+```
+$ cd MRI-T2
+```
+
+Lunch MatLab
+```
+$ matlab
+```
+
+Open the file with input parameters
+```
+>> open assigninptdt.m
+```
+Edit parameters according to your needs. Save.
+
+Lunch simulation
+```
+>> main 0 out.dat
+```
+Here the argument `0` indicates that the input should be taken from the `assigninptdt.m` file and `out.dat` is the output file name.
 
 
 Results
